@@ -12,7 +12,7 @@ Calling camera activity.
         /* 
         File and File Uri used for save the data directly into your created file in local
         */
-        File mediaFile = new File(filename + ".jpg");
+        File mediaFile = new File(filepath + filename + ".jpg");
         Uri fileUri = Uri.fromFile(mediaFile);
 
         intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri); // set the image file name
