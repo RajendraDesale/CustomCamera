@@ -155,7 +155,7 @@ public class MainActivity extends Activity {
         }
         super.onCreate(savedInstanceState);
 
-		final Window win = getWindow();
+		/*final Window win = getWindow();
         win.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN |
                         WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD |
                         WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |
@@ -164,7 +164,7 @@ public class MainActivity extends Activity {
                         WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD |
                         WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |
                         WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
-		
+		*/
 		
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
             // don't show orientation animations
