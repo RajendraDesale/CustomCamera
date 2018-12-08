@@ -1,6 +1,6 @@
 # CustomCamera
 
-Calling camera activity Functionlity.
+Calling camera activity.
 
 ```
         /*
@@ -16,7 +16,6 @@ Calling camera activity Functionlity.
         Uri fileUri = Uri.fromFile(mediaFile);
 
         intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri); // set the image file name
-        
         intent.putExtra("android.intent.extras.CAMERA_FACING", 0);
         startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE1);
 ```
