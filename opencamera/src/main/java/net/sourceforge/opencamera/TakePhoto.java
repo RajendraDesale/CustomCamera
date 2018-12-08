@@ -21,7 +21,7 @@ public class TakePhoto extends Activity {
 			Log.d(TAG, "onCreate");
 		super.onCreate(savedInstanceState);
 
-		final Window win = getWindow();
+		/* final Window win = getWindow();
         win.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN |
                         WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD |
                         WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |
@@ -30,7 +30,8 @@ public class TakePhoto extends Activity {
                         WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD |
                         WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |
                         WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
-
+		*/
+		
 		Intent intent = new Intent(this, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		intent.putExtra(TAKE_PHOTO, true);
