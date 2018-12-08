@@ -3,18 +3,18 @@
 Calling camera activity Functionlity.
 
 ```
-         /*
-         * Camera Activity Call
-         */
+        /*
+         Camera Activity Call
+        */
         Intent intent = new Intent(Photograph.this, SubCameraActivity.class);
         intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
 
+        /* 
+        File and File Uri used for save the data directly into your created file in local
+        */
         File mediaFile = new File(filename + ".jpg");
         Uri fileUri = Uri.fromFile(mediaFile);
 
-        /*
-         * Camera Activity Call
-         */
         intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri); // set the image file name
         
         intent.putExtra("android.intent.extras.CAMERA_FACING", 0);
