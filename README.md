@@ -6,7 +6,7 @@ Calling camera activity.
         /*
          Camera Activity Call
         */
-        Intent intent = new Intent(Photograph.this, SubCameraActivity.class);
+        Intent intent = new Intent(Photograph.this, MainActivity.class);
         intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
 
         /* 
