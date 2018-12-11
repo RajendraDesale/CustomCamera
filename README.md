@@ -1,6 +1,8 @@
 # CustomCamera
 
-Calling camera activity.
+1. Import this project as a module in your Project.
+
+2. use below code for calling camera activity.
 
 ```
         /*
@@ -19,3 +21,4 @@ Calling camera activity.
         intent.putExtra("android.intent.extras.CAMERA_FACING", 0);
         startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE1);
 ```
+3. result will get in onActivityResult() method. 
